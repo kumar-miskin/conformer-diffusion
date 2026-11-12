@@ -1,0 +1,12 @@
+[project]
+name = "confdiff"
+version = "0.1.0"
+description = "Small equivariant DDPM over RDKit molecular conformers"
+requires-python = ">=3.9"
+dependencies = ["numpy", "torch", "rdkit"]
+[project.optional-dependencies]
+test = ["pytest"]
+[tool.setuptools.packages.find]
+where = ["src"]
+[tool.pytest.ini_options]
+pythonpath = ["src"]
